@@ -12,6 +12,6 @@ class Imovel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-# python manage.py makemigrations (faz com que o db saiba o que as models existem)
-# python manage.py migrate (faz o db mudar conforme as models)
+# python manage.py makemigrations
+# python manage.py migrate
 # python manage.py loaddata imovel
