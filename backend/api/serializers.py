@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from .models import Imovel, Anuncio, Reserva
+from .validators import validate_check_out
 
 class ImovelSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,6 +30,7 @@ class AnuncioSerializer(serializers.ModelSerializer):
         ]
 
 class ReservaSerializer(serializers.ModelSerializer):
+    # data_check_out = serializers.CharField(validators=[validate_check_out])
     class Meta:
         model = Reserva
         fields = [
