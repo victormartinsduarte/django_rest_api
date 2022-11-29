@@ -1,8 +1,8 @@
 from rest_framework import generics
 
 
-from .models import Imovel, Anuncio
-from .serializers import ImovelSerializer, AnuncioSerializer
+from .models import Imovel, Anuncio, Reserva
+from .serializers import ImovelSerializer, AnuncioSerializer, ReservaSerializer
 
 class ImovelListCreateAPIView(generics.ListCreateAPIView):
 	queryset = Imovel.objects.all()
@@ -58,3 +58,9 @@ class AnuncioUpdateAPIView(generics.UpdateAPIView):
 		return super().perform_update(serializer)
 
 anuncio_update_view = AnuncioUpdateAPIView.as_view()
+
+class ReservaListCreateAPIView(generics.ListCreateAPIView):
+	queryset = Reserva.objects.all()
+	serializer_class = ReservaSerializer
+
+reservas_list_create_view = ReservaListCreateAPIView.as_view()
