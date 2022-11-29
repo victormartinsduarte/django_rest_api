@@ -11,4 +11,5 @@ urlpatterns = [
 
     path('anuncios/', views.anuncios_list_create_view),
     path('anuncios/<int:pk>/', views.anuncio_detail_view),
+    path('anuncios/<int:pk>/update/', views.anuncio_update_view),
 ]

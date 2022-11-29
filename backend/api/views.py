@@ -48,3 +48,13 @@ class AnuncioDetailAPIView(generics.RetrieveAPIView):
 	serializer_class = AnuncioSerializer
 
 anuncio_detail_view = AnuncioDetailAPIView.as_view()
+
+class AnuncioUpdateAPIView(generics.UpdateAPIView):
+	queryset = Anuncio.objects.all()
+	serializer_class = AnuncioSerializer
+	lookup_field = 'pk'
+
+	def perform_update(self, serializer):
+		return super().perform_update(serializer)
+
+anuncio_update_view = AnuncioUpdateAPIView.as_view()
