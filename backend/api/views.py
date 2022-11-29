@@ -16,3 +16,13 @@ class ImovelDetailAPIView(generics.RetrieveAPIView):
 	# lookup_field = 'pk' (default_auto_field)
 
 imovel_detail_view = ImovelDetailAPIView.as_view()
+
+class ImovelUpdateAPIView(generics.UpdateAPIView):
+	queryset = Imovel.objects.all()
+	serializer_class = ImovelSerializer
+	lookup_field = 'pk'
+
+	def perform_update(self, serializer):
+		return super().perform_update(serializer)
+
+imovel_update_view = ImovelUpdateAPIView.as_view()
