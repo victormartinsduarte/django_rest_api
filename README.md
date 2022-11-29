@@ -17,4 +17,24 @@ Sistema Linux:
     * `source venv/bin/activate`
 
 3. Instalando as dependências
+    * `pip install -r requirements.txt`
+
+4. Crie e popule o banco de dados
+    * Credenciais user e senha ou env auto:
+    * Acesse a pasta backend:
+    * `cd backend/`
+    * Rode o arquivo mysql_db.py:
+    * `python main/mysql_db.py`
+    * Popule rodando os seguintes comandos em sequência:
+    * `python manage.py makemigrations`
+    * `python manage.py migrate`
+    * `python manage.py loaddata imovel anuncio reserva`
+
+5. Inicie o servidor localmente
+    * `python manage.py runserver 8000`
+
+6. Acesse o backend pelo navegador
+    * Utilizando os templates do rest_framework:
+    * `http://localhost:8000/imoveis/`
+    * Rotas possíveis no arquivo 'urls.py' dentro da pasta 'api'
 <details>
