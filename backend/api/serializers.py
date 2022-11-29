@@ -15,3 +15,15 @@ class ImovelSerializer(serializers.ModelSerializer):
             "created_at",
             "updated_at",
         ]
+
+class AnuncioSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Anuncio
+        fields = [
+            "id",
+            "imovel_anunciando",
+            "plataforma_anunciante",
+            "taxa_plataforma",
+            "created_at",
+            "updated_at",
+        ]

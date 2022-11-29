@@ -1,0 +1,35 @@
+[
+    {
+      "model": "api.Anuncio",
+      "pk": 1,
+      "fields": {
+        "imovel_anunciando": 1,
+        "plataforma_anunciante": "AirBnB",
+        "taxa_plataforma": 52.99,
+        "created_at": "2022-09-29T22:07:31-03:00",
+        "updated_at": "2022-11-27T14:39:50-03:00"
+        }
+    },
+    {
+      "model": "api.Anuncio",
+      "pk": 2,
+      "fields": {
+        "imovel_anunciando": 2,
+        "plataforma_anunciante": "TriVago",
+        "taxa_plataforma": 39.99,
+        "created_at": "2022-10-14T16:59:17-03:00",
+        "updated_at": "2022-11-28T19:15:58-03:00"
+        }
+    },
+    {
+      "model": "api.Anuncio",
+      "pk": 3,
+      "fields": {
+        "imovel_anunciando": 4,
+        "plataforma_anunciante": "QuintoAndar",
+        "taxa_plataforma": 79.99,
+        "created_at": "2022-10-21T12:24:49-03:00",
+        "updated_at": "2022-11-28T23:52:43-03:00"
+        }
+    }
+]
