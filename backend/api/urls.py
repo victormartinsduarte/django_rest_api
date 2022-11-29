@@ -14,4 +14,5 @@ urlpatterns = [
     path('anuncios/<int:pk>/update/', views.anuncio_update_view),
 
     path('reservas/', views.reservas_list_create_view),
+    path('reservas/<int:pk>/', views.reserva_detail_view),
 ]

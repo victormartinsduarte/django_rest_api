@@ -64,3 +64,9 @@ class ReservaListCreateAPIView(generics.ListCreateAPIView):
 	serializer_class = ReservaSerializer
 
 reservas_list_create_view = ReservaListCreateAPIView.as_view()
+
+class ReservaDetailAPIView(generics.RetrieveAPIView):
+	queryset = Reserva.objects.all()
+	serializer_class = ReservaSerializer
+
+reserva_detail_view = ReservaDetailAPIView.as_view()
