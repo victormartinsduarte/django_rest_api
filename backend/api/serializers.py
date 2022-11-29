@@ -2,6 +2,7 @@ from rest_framework import serializers
 
 from .models import Imovel, Anuncio, Reserva
 
+
 class ImovelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Imovel
