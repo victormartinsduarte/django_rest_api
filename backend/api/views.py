@@ -58,3 +58,13 @@ class AnuncioUpdateAPIView(generics.UpdateAPIView):
 		return super().perform_update(serializer)
 
 anuncio_update_view = AnuncioUpdateAPIView.as_view()
+
+class AnuncioDeleteAPIView(generics.DestroyAPIView):
+	queryset = Anuncio.objects.all()
+	serializer_class = AnuncioSerializer
+	lookup_field = 'pk'
+
+	def perform_destroy(self, instance):
+		return super().perform_destroy(instance)
+
+anuncio_delete_view = AnuncioDeleteAPIView.as_view()
