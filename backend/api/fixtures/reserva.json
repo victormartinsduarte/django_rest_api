@@ -1,0 +1,114 @@
+[
+    {
+      "model": "api.Reserva",
+      "pk": 1,
+      "fields": {
+        "anuncio_referencia": 1,
+        "data_check_in": "2022-11-28",
+        "data_check_out": "2022-12-05",
+        "preco_total": 739.80,
+        "comentario": "Ótima casa, aconchegante, bela vista.",
+        "numero_hospedes": 4,
+        "created_at": "2022-10-29T22:07:31-03:00",
+        "updated_at": "2022-11-27T14:39:50-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 2,
+      "fields": {
+        "anuncio_referencia": 2,
+        "data_check_in": "2022-11-21",
+        "data_check_out": "2022-11-28",
+        "preco_total": 439.00,
+        "comentario": "Apartamento confortável, vale a pena.",
+        "numero_hospedes": 2,
+        "created_at": "2022-11-14T16:59:17-03:00",
+        "updated_at": "2022-11-28T19:15:58-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 3,
+      "fields": {
+        "anuncio_referencia": 1,
+        "data_check_in": "2022-12-02",
+        "data_check_out": "2022-12-09",
+        "preco_total": 739.80,
+        "comentario": "",
+        "numero_hospedes": 3,
+        "created_at": "2022-10-21T12:24:49-03:00",
+        "updated_at": "2022-11-28T23:52:43-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 4,
+      "fields": {
+        "anuncio_referencia": 3,
+        "data_check_in": "2022-11-19",
+        "data_check_out": "2022-11-29",
+        "preco_total": 1299.99,
+        "comentario": "Muito espaçoso e confortável, a galera curtiu!",
+        "numero_hospedes": 6,
+        "created_at": "2022-10-29T12:24:49-03:00",
+        "updated_at": "2022-11-29T23:52:43-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 5,
+      "fields": {
+        "anuncio_referencia": 3,
+        "data_check_in": "2022-12-20",
+        "data_check_out": "2023-01-05",
+        "preco_total": 2500.00,
+        "comentario": "",
+        "numero_hospedes": 5,
+        "created_at": "2022-11-15T12:24:49-03:00",
+        "updated_at": "2022-11-29T23:52:43-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 6,
+      "fields": {
+        "anuncio_referencia": 1,
+        "data_check_in": "2022-12-10",
+        "data_check_out": "2022-12-17",
+        "preco_total": 739.80,
+        "comentario": "",
+        "numero_hospedes": 4,
+        "created_at": "2022-11-24T12:24:49-03:00",
+        "updated_at": "2022-11-28T23:52:43-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 7,
+      "fields": {
+        "anuncio_referencia": 2,
+        "data_check_in": "2022-12-15",
+        "data_check_out": "2022-12-27",
+        "preco_total": 639.80,
+        "comentario": "",
+        "numero_hospedes": 2,
+        "created_at": "2022-11-27T12:24:49-03:00",
+        "updated_at": "2022-11-28T23:52:43-03:00"
+        }
+    },
+    {
+      "model": "api.Reserva",
+      "pk": 8,
+      "fields": {
+        "anuncio_referencia": 1,
+        "data_check_in": "2022-12-18",
+        "data_check_out": "2023-01-02",
+        "preco_total": 1039.80,
+        "comentario": "",
+        "numero_hospedes": 4,
+        "created_at": "2022-11-22T12:24:49-03:00",
+        "updated_at": "2022-11-28T23:52:43-03:00"
+        }
+    }
+]

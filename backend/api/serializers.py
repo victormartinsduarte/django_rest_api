@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Imovel, Anuncio
+from .models import Imovel, Anuncio, Reserva
 
 class ImovelSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,6 +24,21 @@ class AnuncioSerializer(serializers.ModelSerializer):
             "imovel_anunciando",
             "plataforma_anunciante",
             "taxa_plataforma",
+            "created_at",
+            "updated_at",
+        ]
+
+class ReservaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reserva
+        fields = [
+            "id",
+            "anuncio_referencia",
+            "data_check_in",
+            "data_check_out",
+            "preco_total",
+            "comentario",
+            "numero_hospedes",
             "created_at",
             "updated_at",
         ]
