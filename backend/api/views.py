@@ -26,3 +26,13 @@ class ImovelUpdateAPIView(generics.UpdateAPIView):
 		return super().perform_update(serializer)
 
 imovel_update_view = ImovelUpdateAPIView.as_view()
+
+class ImovelDeleteAPIView(generics.DestroyAPIView):
+	queryset = Imovel.objects.all()
+	serializer_class = ImovelSerializer
+	lookup_field = 'pk'
+
+	def perform_destroy(self, instance):
+		return super().perform_destroy(instance)
+
+imovel_delete_view = ImovelDeleteAPIView.as_view()
