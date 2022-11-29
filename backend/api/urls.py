@@ -15,4 +15,5 @@ urlpatterns = [
 
     path('reservas/', views.reservas_list_create_view),
     path('reservas/<int:pk>/', views.reserva_detail_view),
+    path('reservas/<int:pk>/delete/', views.reserva_delete_view),
 ]

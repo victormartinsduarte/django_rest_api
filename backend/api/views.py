@@ -70,3 +70,13 @@ class ReservaDetailAPIView(generics.RetrieveAPIView):
 	serializer_class = ReservaSerializer
 
 reserva_detail_view = ReservaDetailAPIView.as_view()
+
+class ReservaDeleteAPIView(generics.DestroyAPIView):
+	queryset = Reserva.objects.all()
+	serializer_class = ReservaSerializer
+	lookup_field = 'pk'
+
+	def perform_destroy(self, instance):
+		return super().perform_destroy(instance)
+
+reserva_delete_view = ReservaDeleteAPIView.as_view()
