@@ -1,0 +1,7 @@
+django>=4.0.0,<4.1.0
+djangorestframework
+pyyaml
+requests
+django_cors_headers
+mysqlclient
+mysql-connector-python
