@@ -42,3 +42,9 @@ class AnuncioListCreateAPIView(generics.ListCreateAPIView):
 	serializer_class = AnuncioSerializer
 
 anuncios_list_create_view = AnuncioListCreateAPIView.as_view()
+
+class AnuncioDetailAPIView(generics.RetrieveAPIView):
+	queryset = Anuncio.objects.all()
+	serializer_class = AnuncioSerializer
+
+anuncio_detail_view = AnuncioDetailAPIView.as_view()
