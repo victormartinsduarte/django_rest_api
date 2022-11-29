@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django.core.exceptions import ValidationError
 
 
 class Imovel(models.Model):
@@ -34,3 +35,7 @@ class Reserva(models.Model):
     numero_hospedes = models.IntegerField(default=1)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    def save(self, *args, **kwargs):
+        if self.data_check_out < self.data_check_in:
+            raise ValidationError("Data de check-out inválida!")
+        super(Reserva, self).save(*args, **kwargs)
