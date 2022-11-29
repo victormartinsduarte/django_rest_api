@@ -1,8 +1,8 @@
 from rest_framework import generics
 
 
-from .models import Imovel
-from .serializers import ImovelSerializer
+from .models import Imovel, Anuncio
+from .serializers import ImovelSerializer, AnuncioSerializer
 
 class ImovelListCreateAPIView(generics.ListCreateAPIView):
 	queryset = Imovel.objects.all()
@@ -36,3 +36,9 @@ class ImovelDeleteAPIView(generics.DestroyAPIView):
 		return super().perform_destroy(instance)
 
 imovel_delete_view = ImovelDeleteAPIView.as_view()
+
+class AnuncioListCreateAPIView(generics.ListCreateAPIView):
+	queryset = Anuncio.objects.all()
+	serializer_class = AnuncioSerializer
+
+anuncios_list_create_view = AnuncioListCreateAPIView.as_view()

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Imovel
+from .models import Imovel, Anuncio
 
 class ImovelSerializer(serializers.ModelSerializer):
     class Meta:
