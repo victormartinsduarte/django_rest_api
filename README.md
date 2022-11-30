@@ -27,13 +27,13 @@ Sistema Linux:
     * Modifique usuário e senha dos seguintes arquivos
         para os seus dados que estão logados no MySQL:
     * ./backend/main/setting.py
-        DATABASES
-            default.USER = 'seu_usuario'
-            default.PASSWORD = 'sua_senha'
+       * DATABASES
+          * default.USER = 'seu_usuario'
+          * default.PASSWORD = 'sua_senha'
     * ./backend/main/mysql_db.py
-        mydb
-            user = 'seu_usuario'
-            password = 'sua_senha'
+       * mydb
+          * user = 'seu_usuario'
+          * password = 'sua_senha'
 
 5. Crie e popule o banco de dados
     * Acesse a pasta backend:
